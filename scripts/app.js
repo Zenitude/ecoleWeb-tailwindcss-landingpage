@@ -5,7 +5,7 @@ burgerMenu.addEventListener('click', (e) => {
     e.preventDefault();
     itemsNav.forEach(item => {
         item.classList.contains('hidden')
-        ? item.classList.replace('hidden', 'block')
-        : item.classList.replace('block', 'hidden')
+        ? item.classList.replace('hidden', 'flex')
+        : item.classList.replace('flex', 'hidden')
     })
 })
