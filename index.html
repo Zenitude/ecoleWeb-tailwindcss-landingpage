@@ -11,7 +11,7 @@
 
     <div class="relative bg-[url(/ressources/stylish-mesh-bg.jpg)] bg-center bg-cover bg-no-repeat h-full">
       
-      <header class="bg-white flex h-[70px] justify-between items-center text-lg font-semibold md:bg-transparent">
+      <header class="bg-white flex h-[70px] justify-between items-center text-lg font-semibold relative z-10 md:bg-transparent">
         <nav class="w-full flex items-center md:block md:pr-4">
           <ul class="w-full md:flex md:gap-4 md:w-full md:h-full md:justify-center md:items-center">
             <li class="mr-auto ml-4">
@@ -32,21 +32,23 @@
       </header>
 
       <main class="flex flex-col -mt-[70px]">
-        <section id="accueil" class="pt-24 flex flex-col gap-2 h-screen">
-          <h1 class="uppercase flex flex-col font-bold text-xl text-center">
+        <section id="accueil" class="relative pt-24 flex flex-col gap-2 h-screen md:h-auto md:pb-72">
+          <h1 class="uppercase flex flex-col font-bold text-xl text-center md:text-4xl lg:text-7xl">
             <span>Faites décoller votre</span>
             <span class="text-blue-700">Business en ligne</span>
           </h1>
-          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas tempora impedit quis, officiis expedita.</p>
-          <a href="/start" class="inline-block mx-auto w-60 self-start text-center py-2 shadow-lg border font-bold text-white bg-blue-500 rounded">Commencer </a>
-          <a href="/demo" class="inline-block mx-auto w-60 self-start text-center py-2 shadow-lg border font-bold bg-white rounded">Démo</a>
-          <button class="w-[50px] h-[50px] bg-white rounded-full mx-auto shadow-lg mt-20 mb-8"><i class="text-blue-500 fa-solid fa-arrow-down fa-1x"></i></button>
+          <p class="text-center p-4 md:p-8 lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas tempora impedit quis, officiis expedita.</p>
+          <div class="flex flex-col gap-4 lg:flex-row md:w-1/2 md:mx-auto md:text-center lg:justify-center ">
+            <a href="/start" class="inline-block mx-auto w-60 self-start text-center py-2 shadow-lg border font-bold text-white bg-blue-500 rounded lg:mx-0">Commencer</a>
+            <a href="/demo" class="inline-block mx-auto w-60 self-start text-center py-2 shadow-lg border font-bold bg-white rounded lg:mx-0">Démo</a>
+          </div>
+          <button class="absolute bottom-6 left-1/2 -translate-x-1/2 w-[50px] h-[50px] bg-white rounded-full mx-auto shadow-lg"><i class="text-blue-500 fa-solid fa-arrow-down fa-1x"></i></button>
         </section>
 
-        <section class="bg-white h-screen">
-          <img src="./ressources/hommeTravail.jpg" alt="" class="h-1/2 object-cover">
-          <div class="flex flex-col gap-2 p-4 h-1/2">
-            <h2 class="flex flex-col font-bold text-xl text-center">
+        <section class="bg-white h-screen md:flex md:h-[500px]">
+          <img src="./ressources/hommeTravail.jpg" alt="" class="w-full h-1/2 object-cover md:w-1/2 md:h-full">
+          <div class="flex flex-col gap-2 p-4 h-1/2 w-full md:w-1/2 md:h-full md:p-8 md:justify-center">
+            <h2 class="flex flex-col font-bold text-xl text-center md:text-4xl lg:text-7xl">
               <span class="uppercase">Passez à l'action</span>
               <span class="text-blue-700">Boostez votre SEO</span>
             </h2>
@@ -55,26 +57,26 @@
           </div>
         </section>
 
-        <section id="services" class="bg-blue-500 h-screen text-white flex flex-col gap-4 items-center pt-8 px-4 text-center">
-          <h2 class="font-bold text-2xl">10k+ Développeurs déjà convaincus</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, officiis.</p>
-          <div class="flex flex-col gap-4 justify-around grow">
+        <section id="services" class="bg-blue-500 h-screen text-white flex flex-col gap-4 items-center pt-8 px-4 text-center md:h-[500px] md:gap-12">
+          <h2 class="font-bold text-2xl md:text-4xl lg:text-7xl">10k+ Développeurs déjà convaincus</h2>
+          <p class="lg:text-xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, officiis.</p>
+          <div class="flex flex-col gap-4 justify-around items-center grow md:flex-row md:w-full">
             <article>
-              <h3 class="font-bold text-2xl">100%</h3>
-              <p class="text-lg">En ligne</p>
+              <h3 class="font-bold text-2xl md:text-4xl lg:text-7xl">100%</h3>
+              <p class="text-lg lg:text-2xl">En ligne</p>
             </article>
             <article>
-              <h3 class="font-bold text-2xl">24/7</h3>
-              <p class="text-lg">Support</p>
+              <h3 class="font-bold text-2xl md:text-4xl lg:text-7xl">24/7</h3>
+              <p class="text-lg lg:text-2xl">Support</p>
             </article>
             <article>
-              <h3 class="font-bold text-2xl">100K+</h3>
-              <p class="text-lg">Projets</p>
+              <h3 class="font-bold text-2xl md:text-4xl lg:text-7xl">100K+</h3>
+              <p class="text-lg lg:text-2xl">Projets</p>
             </article>
           </div>
         </section>
 
-        <section id="tarifs" class="container mx-auto mt-14 flex flex-col items-center px-[10px] pb-4">
+        <section id="tarifs" class="container mx-auto mt-14 flex flex-col items-center px-[10px] pb-4 lg:pb-12">
 
               <h1 class="text-4xl font-bold border-b pb-4 mb-4">Prices range</h1>
       
@@ -126,19 +128,19 @@
               </div>
         </section>
 
-        <section class="h-screen bg-gray-200 text-black p-4 flex flex-col">
+        <section class="h-screen bg-gray-200 text-black p-4 flex flex-col lg:p-8 md:h-[500px]">
           <h2 class="font-bold text-2xl text-center pb-8">Ces entreprises nous font confiance</h2>
           <figure class="grow grid grid-cols-1 justify-center items-center text-center md:grid-cols-2 xl:grid-cols-4">
-            <img src="./ressources/IBM.png" alt="logo IBM" class="h-[50px] mx-auto">
-            <img src="./ressources/apple-logo.png" alt="logo Apple" class="h-[70px] mx-auto">
-            <img src="./ressources/github-logo.png" alt="logo Github" class="h-[50px] mx-auto">
-            <img src="./ressources/Audi.png" alt="logo Audi" class="h-[50px] mx-auto">
+            <img src="./ressources/IBM.png" alt="logo IBM" class="h-[50px] mx-auto lg:h-[100px]">
+            <img src="./ressources/apple-logo.png" alt="logo Apple" class="h-[70px] mx-auto lg:h-[120px]">
+            <img src="./ressources/github-logo.png" alt="logo Github" class="h-[50px] mx-auto lg:h-[100px]">
+            <img src="./ressources/Audi.png" alt="logo Audi" class="h-[50px] mx-auto lg:h-[100px]">
           </figure>
         </section>
 
-        <section id="contact" class="bg-gray-50 p-4 flex flex-col gap-8 h-screen">
+        <section id="contact" class="bg-gray-50 p-4 flex flex-col gap-8 min-h-screen md:p-8 lg:min-h-[750px]">
           <h2 class="font-semibold text-xl text-center">Rentrons en contact</h2>
-          <form class="bg-white px-4 py-4 grow flex flex-col gap-6 shadow-sm shadow-black">
+          <form class="bg-white p-4 grow flex flex-col gap-6 shadow-sm shadow-black md:p-8 md:gap-4 lg:w-1/2 lg:mx-auto">
             <div>
               <label for="lastname" class="mb-2">Nom complet</label>
               <input type="text" id="lastname" name="lastname" class="border w-full rounded h-8">
@@ -161,12 +163,12 @@
       </main>
 
       <footer class="bg-gray-800 text-white p-4">
-        <h4 class="font-medium text-center mb-4">Retrouvez-nous ici</h4>
-        <div class="flex flex-col gap-4 justify-center items-center">
-          <a href="/facebook" class="inline-block w-1/6"><img src="/ressources/fb.svg" alt="Profil facebook" class="w-full"></a>
-          <a href="/instagram" class="inline-block w-1/6"><img src="/ressources/instagram.svg" alt="Profil instagram" class="w-full"></a>
-          <a href="/github" class="inline-block w-1/6"><img src="/ressources/githubpetitlogo.svg" alt="Profil github" class="w-full"></a>
-          <a href="/x" class="inline-block w-1/6"><img src="/ressources/twitter.svg" alt="Profil X" class="w-full"></a>
+        <h4 class="font-medium text-center mb-4 lg:text-xl">Retrouvez-nous ici</h4>
+        <div class="flex flex-col gap-4 justify-center items-center lg:flex-row">
+          <a href="/facebook" class="inline-block w-1/6 md:w-1/12 lg:w-[50px]"><img src="/ressources/fb.svg" alt="Profil facebook" class="w-full"></a>
+          <a href="/instagram" class="inline-block w-1/6 md:w-1/12 lg:w-[50px]"><img src="/ressources/instagram.svg" alt="Profil instagram" class="w-full"></a>
+          <a href="/github" class="inline-block w-1/6 md:w-1/12 lg:w-[50px]"><img src="/ressources/githubpetitlogo.svg" alt="Profil github" class="w-full"></a>
+          <a href="/x" class="inline-block w-1/6 md:w-1/12 lg:w-[50px]"><img src="/ressources/twitter.svg" alt="Profil X" class="w-full"></a>
         </div>
         <hr class="my-4">
         <p class="uppercase text-center">&copy; Seotool, tous droits réservés</p>
